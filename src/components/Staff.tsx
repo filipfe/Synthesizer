@@ -4,7 +4,7 @@ import { OpusContext } from "../context/OpusContext";
 
 export default function Staff() {
   const { bars } = useContext(OpusContext);
-  const [barsPerStaff, setBarsPerStaff] = useState(4);
+  const [barsPerStaff] = useState(4);
   return (
     <div
       style={{ gridTemplateColumns: `repeat(${barsPerStaff}, 1fr)` }}

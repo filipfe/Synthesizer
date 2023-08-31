@@ -16,7 +16,7 @@ export default function Bar({
     timeSignature.value === previousBar.timeSignature.value;
   const isTheSameClef = clef === previousBar?.clef;
 
-  const availableSpace = timeSignature.quantity * timeSignature.value;
+  // const availableSpace = timeSignature.quantity * timeSignature.value;
 
   return (
     <div className={`flex flex-col relative justify-center w-full`}>

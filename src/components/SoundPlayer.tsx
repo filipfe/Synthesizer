@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useContext, useRef } from "react";
+import { useState, useEffect, useContext, useRef } from "react";
 import { MembraneSynth } from "tone";
 import { OpusContext } from "../context/OpusContext";
 import { NoteProps } from "../types/note";

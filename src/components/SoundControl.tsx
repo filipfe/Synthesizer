@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef, useContext } from "react";
-import { MembraneSynth, Pattern, Transport } from "tone";
+import { Synth, Pattern, Transport } from "tone";
 import { OpusContext } from "../context/OpusContext";
 
 export default function SoundControl({ children }: { children: JSX.Element }) {
   const { bars, tempo, addNote, changeCurrentNote } = useContext(OpusContext);
   const [octave, setOctave] = useState(4);
-  const synth = useRef(new MembraneSynth().toDestination());
+  const synth = useRef(new Synth().toDestination());
 
   useEffect(() => {
     const detectKeyPress = (e: KeyboardEvent) => {

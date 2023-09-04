@@ -1,5 +1,6 @@
 import { BarProps } from "../types/bar";
 import { ClefType } from "../types/general";
+import { DurationType } from "../types/note";
 
 export const noteNames = [
     "C",
@@ -21,16 +22,6 @@ export const noteNames = [
     "B"
 ]
 
-export const noteNamesFromCKey = [
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "A",
-    "B"
-]
-
 export const trebleClefNotes = [
     "G5",
     "F5",
@@ -45,141 +36,114 @@ export const trebleClefNotes = [
     "D4",
 ]
 
+export const bassClefNotes = [
+  "B3",
+  "A3",
+  "G3",
+  "F3",
+  "E3",
+  "D3",
+  "C3",
+  "B2",
+  "A2",
+  "G2",
+  "F2",
+]
+
 export const initialBars: BarProps[] = [
     {
       clef: ClefType.TREBLE,
       timeSignature: {
+        quantity: 11,
         value: 4,
-        quantity: 4,
       },
       notes: [
         {
-          duration: 4,
-          pitch: {
-            name: "G",
-            octave: 4,
-          },
-        },
-        {
-          duration: 4,
-          pitch: {
-            name: "F",
-            octave: 5,
-          },
-        },
-      ],
-    },
-    {
-      clef: ClefType.TREBLE,
-      timeSignature: {
-        value: 4,
-        quantity: 3,
-      },
-      notes: [
-        {
-          duration: 4,
+          duration: DurationType.QUARTER,
+          time: "0:1",
           pitch: {
             name: "A#",
-            octave: 4,
+            octave: 2,
           },
         },
         {
-          duration: 2,
+          duration: DurationType.QUARTER,
+          time: "0:2",
           pitch: {
             name: "A",
-            octave: 4,
+            octave: 2,
           },
         },
-      ],
-    },
-    {
-      clef: ClefType.TREBLE,
-      timeSignature: {
-        value: 4,
-        quantity: 4,
-      },
-      notes: [
         {
-          duration: 4,
+          duration: DurationType.QUARTER,
+          time: "0:3",
           pitch: {
-            name: "G",
-            octave: 4,
+            name: "D",
+            octave: 3,
           },
         },
         {
-          duration: 4,
-          pitch: {
-            name: "F",
-            octave: 5,
-          },
-        },
-      ],
-    },
-    {
-      clef: ClefType.TREBLE,
-      timeSignature: {
-        value: 4,
-        quantity: 3,
-      },
-      notes: [
-        {
-          duration: 4,
+          duration: DurationType.QUARTER,
+          time: "0:4",
           pitch: {
             name: "C",
             octave: 4,
           },
         },
         {
-          duration: 2,
+          duration: DurationType.QUARTER,
+          time: "0:5",
           pitch: {
-            name: "A",
+            name: "F",
             octave: 4,
           },
         },
-      ],
-    },
-    {
-      clef: ClefType.TREBLE,
-      timeSignature: {
-        value: 4,
-        quantity: 4,
-      },
-      notes: [
         {
-          duration: 4,
+          duration: DurationType.QUARTER,
+          time: "0:6",
+          pitch: {
+            name: "E",
+            octave: 4,
+          },
+        },
+        {
+          duration: DurationType.QUARTER,
+          time: "0:7",
           pitch: {
             name: "G",
             octave: 4,
           },
         },
         {
-          duration: 4,
+          duration: DurationType.QUARTER,
+          time: "0:8",
           pitch: {
-            name: "F",
-            octave: 5,
-          },
-        },
-      ],
-    },
-    {
-      clef: ClefType.TREBLE,
-      timeSignature: {
-        value: 4,
-        quantity: 3,
-      },
-      notes: [
-        {
-          duration: 4,
-          pitch: {
-            name: "C",
+            name: "D",
             octave: 4,
           },
         },
         {
-          duration: 2,
+          duration: DurationType.QUARTER,
+          time: "0:9",
+          pitch: {
+            name: "D",
+            octave: 3,
+          },
+        },
+        {
+          duration: DurationType.QUARTER,
+          time: "0:10",
           pitch: {
             name: "A",
-            octave: 4,
+            octave: 2,
+          },
+        },
+        {
+          duration: DurationType.QUARTER,
+          time: "0:11",
+          pitch: {
+            name: "C",
+            octave: 3,
           },
         },
       ],

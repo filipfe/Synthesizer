@@ -1,8 +1,12 @@
 export enum ClefType {
-    TREBLE,
-    BASS,
-    ALTO,
-    TENOR
+    TREBLE = "treble",
+    BASS = "bass",
+    ALTO = "alto",
+    TENOR = "tenor",
+    PERCUSSION = "percussion",
+    MEZZO_SOPRANO = "mezzo-soprano",
+    BARITONE = "baritone",
+    SOPRANO = "soprano",
 }
 
 export type TimeSignature = {
